@@ -1,0 +1,86 @@
+---
+title: "How Do I Pick an R Package..."
+subtitle:  <span style="font-weight:bold">for My Clinical Workflow?</span>
+author: <span style="color:#FFFFFF">twitter:@rinpharma github:philbowsher</span>
+output:
+  xaringan::moon_reader:
+    css: "include/rstudio.css"
+    nature:
+      countIncrementalSlides: yes
+      highlightLines: yes
+      highlightStyle: github
+      ratio: 16:9
+resource_files:
+  - include
+  - images
+---
+
+
+class: subtitle-slide, white, middle, center
+
+# Quick Survey
+- https://rstd.io/phil-me-up
+
+---
+
+
+class: panel-narrow-slide, left
+
+# Validation
+
+- https://www.r-project.org/doc/R-FDA.pdf
+- https://www.rstudio.com/wp-content/uploads/2014/06/RStudio-Commercial-IDE-Validation.pdf
+- https://www.rstudio.com/wp-content/uploads/2014/06/RStudio-Shiny-Server-Pro-Validation.pdf
+
+---
+class: panel-narrow-slide, left
+
+# Books
+
+- https://r4ds.had.co.nz/
+
+---
+class: panel-narrow-slide, left
+
+# What are you using?
+
+```
+writeLines(capture.output(devtools::session_info()), “devsessionInfo.txt”)
+```
+
+---
+class: panel-narrow-slide, left
+
+# How do you pick them?
+
+- [Author](https://github.com/tidyverse/ggplot2)
+- [Releases](https://github.com/tidyverse/ggplot2/blob/master/NEWS)
+- [CRAN?](https://cran.r-project.org/web/packages/ggplot2/index.html)
+- [Downloads](https://hadley.shinyapps.io/cran-downloads/)
+- [Documentation](https://github.com/tidyverse/ggplot2)
+- [Tests](https://github.com/tidyverse/ggplot2)
+- [Champion](https://www.tidyverse.org/learn/)
+- [Dependencies](https://demo.rstudiopm.com/client/#/repos/4/packages/ggplot2)
+- [License](https://github.com/tidyverse/ggplot2/blob/master/LICENSE)
+- [Stars](https://github.com/tidyverse/ggplot2)
+
+---
+class: panel-narrow-slide, left
+
+# Collaboration
+
+.pull-left[
+  # [R in Pharma](https://rinpharma.com)
+  ]
+.pull-right[ 
+  # [Pharma R PSI](https://pharmar.org)
+]
+
+---
+class: panel-narrow-slide, left
+
+# Why R?
+
+- [Students learn R](http://washstat.org/presentations/20181024/Schuette.pdf)
+- [tensorflow](https://www.rstudio.com/resources/videos/machine-learning-with-tensorflow-and-r/)
+

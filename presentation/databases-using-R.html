@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How Do I Pick an R Package…</title>
+    <meta charset="utf-8">
+    <meta name="author" content="twitter:@rinpharma github:philbowsher" />
+    <link rel="stylesheet" href="include/rstudio.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# How Do I Pick an R Package…
+## <span style="font-weight:bold">for My Clinical Workflow?</span>
+### <span style="color:#FFFFFF">twitter:<span class="citation">@rinpharma</span> github:philbowsher</span>
+
+---
+
+
+
+class: subtitle-slide, white, middle, center
+
+# Quick Survey
+- https://rstd.io/phil-me-up
+
+---
+
+
+class: panel-narrow-slide, left
+
+# Validation
+
+- https://www.r-project.org/doc/R-FDA.pdf
+- https://www.rstudio.com/wp-content/uploads/2014/06/RStudio-Commercial-IDE-Validation.pdf
+- https://www.rstudio.com/wp-content/uploads/2014/06/RStudio-Shiny-Server-Pro-Validation.pdf
+
+---
+class: panel-narrow-slide, left
+
+# Books
+
+- https://r4ds.had.co.nz/
+
+---
+class: panel-narrow-slide, left
+
+# What are you using?
+
+```
+writeLines(capture.output(devtools::session_info()), “devsessionInfo.txt”)
+```
+
+---
+class: panel-narrow-slide, left
+
+# How do you pick them?
+
+- [Author](https://github.com/tidyverse/ggplot2)
+- [Releases](https://github.com/tidyverse/ggplot2/blob/master/NEWS)
+- [CRAN?](https://cran.r-project.org/web/packages/ggplot2/index.html)
+- [Downloads](https://hadley.shinyapps.io/cran-downloads/)
+- [Documentation](https://github.com/tidyverse/ggplot2)
+- [Tests](https://github.com/tidyverse/ggplot2)
+- [Champion](https://www.tidyverse.org/learn/)
+- [Dependencies](https://demo.rstudiopm.com/client/#/repos/4/packages/ggplot2)
+- [License](https://github.com/tidyverse/ggplot2/blob/master/LICENSE)
+- [Stars](https://github.com/tidyverse/ggplot2)
+
+---
+class: panel-narrow-slide, left
+
+# Collaboration
+
+.pull-left[
+  # [R in Pharma](https://rinpharma.com)
+  ]
+.pull-right[ 
+  # [Pharma R PSI](https://pharmar.org)
+]
+
+---
+class: panel-narrow-slide, left
+
+# Why R?
+
+- [Students learn R](http://washstat.org/presentations/20181024/Schuette.pdf)
+- [tensorflow](https://www.rstudio.com/resources/videos/machine-learning-with-tensorflow-and-r/)
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"countIncrementalSlides": true,
+"highlightLines": true,
+"highlightStyle": "github",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
